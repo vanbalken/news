@@ -1,21 +1,12 @@
-from flask import render_template
-
-
 from flask import current_app as app
 from flask import render_template
-import feedparser
+
+from .const import URLS
+from .rss import to_rss_feed
 
 
 @app.route("/")
 def home():
-    urls = [
-        "http://feeds.bbci.co.uk/news/rss.xml",
-        "http://feeds.nos.nl/nosnieuwsalgemeen",
-        "https://news.ycombinator.com/rss",
-        "http://feeds.feedburner.com/tweakers/nieuws",
+    feeds = (to_rss_feed(url) for url in URLS)
 
-    ]
-
-    dd = map(feedparser.parse, urls)
-    
-    return render_template("home.html", dd=dd)
+    return render_template("home.html", feeds=feeds)

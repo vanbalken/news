@@ -1,12 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    {% for d in dd %}
+    {% for feed in feeds %}
     <div>
-        <h2>{{ d.feed.title }}</h2>
+        <h2>{{ feed.title }}</h2>
         <ul>
-        {% for item in d["items"] %}
-            <li><a href="{{ item['link'] }}">{{ item["title"] }}</a></li>
+        {% for item in feed.items %}
+            <li><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
         {% endfor %}
         </ul>
     </div>
