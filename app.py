@@ -1,11 +1,7 @@
-from crypt import methods
-from flask import Flask
+from news import create_app
 
-app = Flask(__name__)
 
-@app.route("/")
-def index():
-    return "<p>Hallo</p>"
+app = create_app()
 
 if __name__ == "__main__":
-    app.run(threaded=True, port=5000)
+    app.run()

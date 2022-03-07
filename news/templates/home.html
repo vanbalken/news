@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% for d in dd %}
+    <div>
+        <h2>{{ d.feed.title }}</h2>
+        <ul>
+        {% for item in d["items"] %}
+            <li><a href="{{ item['link'] }}">{{ item["title"] }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+{% endblock %}
