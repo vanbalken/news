@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<div class="container">
     {% for feed in feeds %}
     <div>
         <h2>{{ feed.title }}</h2>
@@ -11,4 +12,5 @@
         </ul>
     </div>
     {% endfor %}
+</div>
 {% endblock %}
