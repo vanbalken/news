@@ -4,7 +4,7 @@
 <div class="container">
     {% for feed in feeds %}
     <div>
-        <h2>{{ feed.title }}</h2>
+        <h3>{{ feed.title }}</h3>
         <ul>
         {% for item in feed.items %}
             <li>{{ item.published }} <a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>

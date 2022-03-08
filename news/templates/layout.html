@@ -10,7 +10,18 @@
       }
 
       .container > div {
-        width: 35em;
+        flex-grow: 1;
+        width: 33%;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .container > div {
+          width: 100%;
+        }
       }
     </style>
   </head>
