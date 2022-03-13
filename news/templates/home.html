@@ -1,16 +1,27 @@
-{% extends 'layout.html' %}
+<!doctype html>
+<html>
 
-{% block content %}
-<div class="container">
-    {% for feed in feeds %}
-    <div>
-        <h3>{{ feed.title }}</h3>
-        <ul>
-        {% for item in feed.items %}
-            <li>{{ item.published }} <a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/news.css">
+    <title>Nieuws</title>
+</head>
+
+<body>
+
+    <div class="container">
+        {% for feed in feeds %}
+        <div>
+            <h3>{{ feed.title }}</h3>
+            <ul>
+                {% for item in feed.items %}
+                <li>{{ item.published }} <a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
         {% endfor %}
-        </ul>
     </div>
-    {% endfor %}
-</div>
-{% endblock %}
+
+</body>
+
+</html>
