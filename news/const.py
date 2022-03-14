@@ -7,6 +7,6 @@ URLS = [
     "https://www.aljazeera.com/xml/rss/all.xml",
     "https://news.ycombinator.com/rss",
     "http://feeds.feedburner.com/tweakers/nieuws",
-    "https://old.reddit.com/r/all.rss",
+    "https://www.reddit.com/r/all/top.rss",
 ]
 ENTRIES_PER_FEED = 10
