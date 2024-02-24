@@ -7,6 +7,10 @@ Sources are queried on page request. The application has only one user and retri
 ## Development
 
 ```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ python3 -m pip install -r requirements.txt
+
 $ export FLASK_APP=news
 $ export FLASK_ENV=development
 $ flask run
