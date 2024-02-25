@@ -15,4 +15,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["gunicorn", "news:create_app()"]
+CMD ["gunicorn", "--bind 0.0.0.0:5000", "news:create_app()"]
