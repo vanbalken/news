@@ -19,3 +19,4 @@ sgmllib3k==1.0.0
 tomli==2.0.1
 typing-extensions==4.1.1
 Werkzeug==2.0.3
+gunicorn==21.2.0
