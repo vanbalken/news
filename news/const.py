@@ -7,6 +7,6 @@ URLS = [
     "https://www.aljazeera.com/xml/rss/all.xml",
     "https://news.ycombinator.com/rss",
     "http://feeds.feedburner.com/tweakers/nieuws",
-    "https://www.reddit.com/r/all/top.rss",
+    # "https://www.reddit.com/r/all/top.rss", # Getting 429 too many requests, probably need API key
 ]
 ENTRIES_PER_FEED = 10
