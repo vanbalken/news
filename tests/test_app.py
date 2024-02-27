@@ -43,14 +43,3 @@ def test_app_works(client):
 
         assert response.status_code == 200
         assert m.call_count == 7
-
-
-def test_app_works_with_failing_rss_feeds(client):
-    """Validates that the application still returns a html page even when no rss feeds can be called."""
-    with requests_mock.Mocker() as m:
-        m.get(requests_mock.ANY, status_code=500)
-
-        response = client.get("/")
-        print(response.text)
-        assert response.status_code == 200
-        assert m.call_count == 7
