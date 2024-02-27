@@ -2,11 +2,11 @@
 from flask import Flask
 
 
-def create_app():
+def create_app() -> Flask:
     """Construct the core application."""
     app = Flask(__name__)
 
     with app.app_context():
-        from . import routes
+        from . import routes  # noqa: F401
 
         return app

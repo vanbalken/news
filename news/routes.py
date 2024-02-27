@@ -6,7 +6,8 @@ from .rss import to_rss_feed
 
 
 @app.route("/")
-def home():
+def home() -> str:
     feeds = (to_rss_feed(url) for url in URLS)
+    filtered_feeds = filter(lambda r : r is not None, feeds)
 
-    return render_template("home.html", feeds=feeds)
+    return render_template("home.html", feeds=filtered_feeds)

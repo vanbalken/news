@@ -19,3 +19,7 @@ sgmllib3k==1.0.0
 tomli==2.0.1
 typing-extensions==4.10.0
 Werkzeug==3.0.1
+pytest==8.0.2
+requests==2.31.0
+requests-mock==1.11.0
+types-requests==2.31.0.20240218
