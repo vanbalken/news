@@ -1,4 +1,4 @@
-black==24.8.0
+black==24.10.0
 click==8.1.7
 feedparser==6.0.11
 flake8==7.1.1
@@ -6,9 +6,9 @@ Flask==3.0.3
 gunicorn==23.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
-MarkupSafe==2.1.5
+MarkupSafe==3.0.2
 mccabe==0.7.0
-mypy==1.11.2
+mypy==1.13.0
 mypy-extensions==1.0.0
 pathspec==0.12.1
 platformdirs==4.3.6
@@ -16,10 +16,10 @@ pycodestyle==2.12.1
 pyflakes==3.2.0
 pytz==2024.2
 sgmllib3k==1.0.0
-tomli==2.0.1
+tomli==2.0.2
 typing-extensions==4.12.2
-Werkzeug==3.0.4
+Werkzeug==3.1.0
 pytest==8.3.3
 requests==2.32.3
 requests-mock==1.12.1
-types-requests==2.32.0.20240914
+types-requests==2.32.0.20241016
